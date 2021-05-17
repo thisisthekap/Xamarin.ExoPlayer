@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+
+	<attr path="/api/package[@name='com.google.android.exoplayer2']/class[@name='MediaItem']/field[@name='clippingProperties']" name="managedName">ClippingPropertiesField</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2']/class[@name='MediaItem']/field[@name='playbackProperties']" name="managedName">PlaybackPropertiesField</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2']/class[@name='MediaItem']/field[@name='liveConfiguration']" name="managedName">LiveConfigurationField</attr>
+
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2']/class[@name='Timeline.Period']/field[@name='durationUs']" />
+
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2']/class[@name='Timeline.Window']/field[@name='durationUs']" />
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2']/class[@name='Timeline.Window']/field[@name='isLive']" />
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2']/class[@name='Timeline.Window']/field[@name='defaultPositionUs']" />
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2']/class[@name='Timeline.Window']/field[@name='positionInFirstPeriodUs']" />
+
+	<add-node path="/api/package[@name='com.google.android.exoplayer2.offline']/class[@name='StreamKey']">
+		<method name="compareTo" return="int" abstract="false" native="false" synchronized="false" static="false" final="false" deprecated="not deprecated" visibility="public">
+			<parameter name="p0" type="java.lang.Object" />
+		</method>
+	</add-node>
+	<add-node path="/api/package[@name='com.google.android.exoplayer2.drm']/class[@name='DrmInitData']">
+		<method name="compare" return="int" abstract="false" native="false" synchronized="false" static="false" final="false" deprecated="not deprecated" visibility="public">
+			<parameter name="p1" type="java.lang.Object" />
+			<parameter name="p2" type="java.lang.Object" />
+		</method>
+	</add-node>
+
+	<!-- Binding AdPlaybackState.AdGroup.uris in Additons.cs to mitigate namespace collision issue -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.ads']/class[@name='AdPlaybackState.AdGroup']/field[@name='uris']" />
+
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='HttpDataSource.Factory']/method[@name='createDataSource' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='DataSource.Factory']/method[@name='createDataSource' and count(parameter)=0]" />
+
+	<attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/class[@name='DefaultHttpDataSource.Factory']/method[@name='setDefaultRequestProperties' and count(parameter)=1 and parameter[1][@type='java.util.Map&lt;java.lang.String, java.lang.String&gt;']]" name="return">com.google.android.exoplayer2.upstream.HttpDataSource.Factory</attr>
+
+	<attr path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='ApicFrame']/field[@name='ID']" name="managedName">ApicFrameId</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='MlltFrame']/field[@name='ID']" name="managedName">MlltFrameId</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='InternalFrame']/field[@name='ID']" name="managedName">InternalFrameId</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='CommentFrame']/field[@name='ID']" name="managedName">CommentFrameId</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='ChapterFrame']/field[@name='ID']" name="managedName">ChapterFrameId</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='ChapterTocFrame']/field[@name='ID']" name="managedName">ChapterTocFrameId</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='GeobFrame']/field[@name='ID']" name="managedName">GeobFrameId</attr>
+	<attr path="/api/package[@name='com.google.android.exoplayer2.metadata.id3']/class[@name='PrivFrame']/field[@name='ID']" name="managedName">PrivFrameId</attr>
+
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='HttpDataSource']/method[@name='close' and count(parameter)=0]" />
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='HttpDataSource']/method[@name='open' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.DataSpec']]" />
+	<remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/interface[@name='HttpDataSource']/method[@name='read' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" />
+
+</metadata>

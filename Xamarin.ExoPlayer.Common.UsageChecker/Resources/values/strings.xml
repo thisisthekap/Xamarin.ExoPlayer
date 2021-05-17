@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Xamarin.ExoPlayer.Common.UsageChecker</string>
+    <string name="action_settings">Settings</string>
+</resources>

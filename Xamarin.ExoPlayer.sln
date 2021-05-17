@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer", "Xamarin.ExoPlayer\Xamarin.ExoPlayer.csproj", "{A0FE2F1B-C16F-41DE-98E1-34780A547A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Core", "Xamarin.ExoPlayer.Core\Xamarin.ExoPlayer.Core.csproj", "{397DEB5C-9E73-43AF-AEEB-6F4BD4B3816F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Dash", "Xamarin.ExoPlayer.Dash\Xamarin.ExoPlayer.Dash.csproj", "{A6F7215C-CF8A-4E0D-8B11-40A65DC6CFC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Hls", "Xamarin.ExoPlayer.Hls\Xamarin.ExoPlayer.Hls.csproj", "{86C0F307-FB54-45E2-A958-E74C6A7BD78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Smoothstreaming", "Xamarin.ExoPlayer.Smoothstreaming\Xamarin.ExoPlayer.Smoothstreaming.csproj", "{B4A1184A-518E-4706-9FE1-9E5FA394FFEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Transformer", "Xamarin.ExoPlayer.Transformer\Xamarin.ExoPlayer.Transformer.csproj", "{3EAAA1EA-91B5-4730-A79B-B7597E7A230F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Ui", "Xamarin.ExoPlayer.Ui\Xamarin.ExoPlayer.Ui.csproj", "{75E10810-D080-4455-A763-073B5CE4E403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Common", "Xamarin.ExoPlayer.Common\Xamarin.ExoPlayer.Common.csproj", "{A7DA85D8-98CD-47E0-AF71-5573F25366D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Extractor", "Xamarin.ExoPlayer.Extractor\Xamarin.ExoPlayer.Extractor.csproj", "{61146BB2-2B45-47D3-AF9D-A432B1CA091D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.ExoPlayer.Common.UsageChecker", "Xamarin.ExoPlayer.Common.UsageChecker\Xamarin.ExoPlayer.Common.UsageChecker.csproj", "{064A2FF1-3654-4956-9763-16CF8005068E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0FE2F1B-C16F-41DE-98E1-34780A547A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FE2F1B-C16F-41DE-98E1-34780A547A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FE2F1B-C16F-41DE-98E1-34780A547A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FE2F1B-C16F-41DE-98E1-34780A547A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397DEB5C-9E73-43AF-AEEB-6F4BD4B3816F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397DEB5C-9E73-43AF-AEEB-6F4BD4B3816F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397DEB5C-9E73-43AF-AEEB-6F4BD4B3816F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397DEB5C-9E73-43AF-AEEB-6F4BD4B3816F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F7215C-CF8A-4E0D-8B11-40A65DC6CFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F7215C-CF8A-4E0D-8B11-40A65DC6CFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F7215C-CF8A-4E0D-8B11-40A65DC6CFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F7215C-CF8A-4E0D-8B11-40A65DC6CFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C0F307-FB54-45E2-A958-E74C6A7BD78C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C0F307-FB54-45E2-A958-E74C6A7BD78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C0F307-FB54-45E2-A958-E74C6A7BD78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C0F307-FB54-45E2-A958-E74C6A7BD78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4A1184A-518E-4706-9FE1-9E5FA394FFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4A1184A-518E-4706-9FE1-9E5FA394FFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4A1184A-518E-4706-9FE1-9E5FA394FFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4A1184A-518E-4706-9FE1-9E5FA394FFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EAAA1EA-91B5-4730-A79B-B7597E7A230F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EAAA1EA-91B5-4730-A79B-B7597E7A230F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EAAA1EA-91B5-4730-A79B-B7597E7A230F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EAAA1EA-91B5-4730-A79B-B7597E7A230F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E10810-D080-4455-A763-073B5CE4E403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E10810-D080-4455-A763-073B5CE4E403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E10810-D080-4455-A763-073B5CE4E403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E10810-D080-4455-A763-073B5CE4E403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DA85D8-98CD-47E0-AF71-5573F25366D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DA85D8-98CD-47E0-AF71-5573F25366D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DA85D8-98CD-47E0-AF71-5573F25366D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DA85D8-98CD-47E0-AF71-5573F25366D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61146BB2-2B45-47D3-AF9D-A432B1CA091D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61146BB2-2B45-47D3-AF9D-A432B1CA091D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61146BB2-2B45-47D3-AF9D-A432B1CA091D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61146BB2-2B45-47D3-AF9D-A432B1CA091D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064A2FF1-3654-4956-9763-16CF8005068E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064A2FF1-3654-4956-9763-16CF8005068E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064A2FF1-3654-4956-9763-16CF8005068E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064A2FF1-3654-4956-9763-16CF8005068E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB768EFA-B82C-4780-BC51-AAB1EE36BBE6}
+	EndGlobalSection
+EndGlobal
